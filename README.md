@@ -1,7 +1,8 @@
 # Predicting Credit Risk using Machine Learning
 
-This Machine-Learning example uses a variety of credit-related risk factors to predict a potential client's credit risk.  Machine Learning models include Logistic Regression, Balanced Random Forest and EasyEnsemble, and a variety of re-sampling techniques are used (Oversampling/SMOTE, Undersampling/Cluster Centroids, and SMOTEENN) to re-sample the data.  Evaluation metrics like the accuracy score, classification report and confusion matrix are generated to compare models and determine which suits this particular set of data best.
-![credit](https://www.badcredit.org/wp-content/uploads/2019/05/cash-loans-for-no-credit-feat.jpg?1)
+This Machine-Learning example uses a variety of credit-related risk factors to predict a potential client's credit risk.  
+Machine Learning models include Logistic Regression, Balanced Random Forest and EasyEnsemble, and a variety of re-sampling techniques are used (Oversampling/SMOTE, Undersampling/Cluster Centroids, and SMOTEENN) to re-sample the data.  Evaluation metrics like the accuracy score, classification report and confusion matrix are generated to compare models and determine which suits this particular set of data best.
+
 
 ---
 
@@ -41,8 +42,7 @@ Generating Classification Report:
     from imblearn.metrics import classification_report_imbalanced
     print(classification_report_imbalanced(y_test, predictions))
     
-The above code results in the following classification report:
-![class_report](/Screenshots/class_report.png?raw=true)
+
 
 ### SMOTE Oversampling:
 
