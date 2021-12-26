@@ -8,7 +8,7 @@ This Machine-Learning example uses a variety of credit-related risk factors to p
 ## Data Pre-Processing:
 After reading in the original dataset and converting a few columns, we were left the following dataset.  Here are just a few of the features, along with the target column "loan_status":
 
-![dataframe](/Screenshots/dataframe.png?raw=true)
+
 
 The data was then split into X and y datframes, training/testing sets, and then scaled.  We were now ready to try different re-sampling techniques.
 
@@ -82,8 +82,7 @@ Of the 4 models, both the Logistic Regression model using the SMOTEENN Combinati
 
     importances = pd.DataFrame(brf_model.feature_importances_, index = X_train.columns, columns=['Importance']).sort_values('Importance', ascending=False)
     
-The above code results in the following Feature Importance Table (this shows top 5 features):
-![importance](/Screenshots/importance.png?raw=true)
+
 
 ### Easy Ensemble Classifier:
 
